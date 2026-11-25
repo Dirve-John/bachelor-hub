@@ -11,18 +11,18 @@
     {
       "id": "availability",
       "title": "Which weekends work for you?",
-      "intro": "Each option is Thursday night to Sunday morning in 2027. Check every weekend you can make. Unchecked means you can't.",
+      "intro": "Check every weekend you can make.",
       "open": true,
       "commentPrompt": "Anything we should know? (optional)",
       "commentPlaceholder": "e.g. Can only do Fri–Sun that weekend",
       "options": [
-        { "id": "2027-07-22", "start": "2027-07-22", "end": "2027-07-25", "note": "Peak season, highest house prices" },
-        { "id": "2027-07-29", "start": "2027-07-29", "end": "2027-08-01", "note": "Still peak season" },
-        { "id": "2027-08-05", "start": "2027-08-05", "end": "2027-08-08", "note": "Original target" },
-        { "id": "2027-08-12", "start": "2027-08-12", "end": "2027-08-15", "note": "Best value so far: houses ~20–25% cheaper than late July" },
-        { "id": "2027-08-26", "start": "2027-08-26", "end": "2027-08-29", "note": "Not priced yet" },
-        { "id": "2027-09-02", "start": "2027-09-02", "end": "2027-09-05", "note": "Labor Day weekend (Mon Sep 6): higher prices and crowds" },
-        { "id": "2027-09-09", "start": "2027-09-09", "end": "2027-09-12", "note": "About 3–4 weeks before the wedding" }
+        { "id": "2027-07-22", "start": "2027-07-22", "end": "2027-07-25" },
+        { "id": "2027-07-29", "start": "2027-07-29", "end": "2027-08-01" },
+        { "id": "2027-08-05", "start": "2027-08-05", "end": "2027-08-08" },
+        { "id": "2027-08-12", "start": "2027-08-12", "end": "2027-08-15" },
+        { "id": "2027-08-26", "start": "2027-08-26", "end": "2027-08-29" },
+        { "id": "2027-09-02", "start": "2027-09-02", "end": "2027-09-05" },
+        { "id": "2027-09-09", "start": "2027-09-09", "end": "2027-09-12" }
       ]
     }
   ]
