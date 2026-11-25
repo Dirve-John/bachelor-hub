@@ -38,6 +38,9 @@ function nav(current) {
   return `<nav class="nav">${links}</nav>`;
 }
 
+// Home page: just the site title. Other pages: "Page · Site".
+const fullTitle = (page) => (page.file === "index.html" ? content.site.title : `${page.title} · ${content.site.title}`);
+
 rmSync(out, { recursive: true, force: true });
 mkdirSync(out, { recursive: true });
 cpSync(join(root, "src/static"), out, { recursive: true });
@@ -52,7 +55,7 @@ for (const page of content.pages) {
     .replace("{{content}}", () => body)
     .replace("{{nav}}", () => nav(page.file))
     .replace(/\{\{site\.(\w+)\}\}/g, (_, k) => esc(content.site[k]))
-    .replace(/\{\{page\.(\w+)\}\}/g, (_, k) => esc(page[k]));
+    .replace(/\{\{page\.(\w+)\}\}/g, (_, k) => esc(k === "fullTitle" ? fullTitle(page) : page[k]));
   writeFileSync(join(out, page.file), html);
 }
 console.log(`Built ${content.pages.length} page(s) into dist/`);
